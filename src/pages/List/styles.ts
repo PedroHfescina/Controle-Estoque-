@@ -28,6 +28,7 @@ export const Filters = styled.div`
 
         opacity: .4;
         transition: opacity .3s;
+
         &:hover {
             opacity: .7;
         }
@@ -60,5 +61,4 @@ export const Filters = styled.div`
         .tag-actived{
             opacity: 1;
         }
-    
 `;
