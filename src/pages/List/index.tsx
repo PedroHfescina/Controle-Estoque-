@@ -40,7 +40,7 @@ const List: React.FC = () => {
     return type === 'entry-balance' ?
       {
         title: 'Entradas',
-        lineColor: '#F7931B',
+        lineColor: '#4E41F0',
         data: gains
       }
     :
@@ -99,9 +99,6 @@ const List: React.FC = () => {
       throw new Error('Invalid year value')
     }
   }
-
-
-
 
 
   // Movido a lógica do estado selecionado da frequência para fora do hook useEffect
