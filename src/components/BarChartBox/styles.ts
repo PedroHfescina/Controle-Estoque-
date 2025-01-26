@@ -16,6 +16,14 @@ export const Container = styled.div`
     border-radius: 7px;
 
     display: flex;
+
+    @media(max-width: 1220px){
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+    }
 `;
 
 
@@ -48,6 +56,12 @@ export const LegendContainer = styled.ul`
     height: 175px;
     padding-right: 15px;
     overflow-y: scroll;
+
+    @media(max-width: 1220px){
+        display: flex;
+
+        height: auto;
+    }
 `;
 
 export const Legend = styled.li<ILegendProps>`
@@ -71,5 +85,17 @@ export const Legend = styled.li<ILegendProps>`
 
     > span {
         margin-left: 5px;
+    }
+
+    @media(max-width: 1220px){
+        > div {
+        background-color: ${props => props.color};
+
+        width: 30px;
+        height: 30x;
+
+        font-size: 10px;
+        line-height: 30px;
+    }
     }
 `;
